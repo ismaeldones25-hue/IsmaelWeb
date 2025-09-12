@@ -1,0 +1,99 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+/* overlay to darken image */
+url('bldgA.png') no-repeat center center / cover fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Login Container */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #aaa;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 5px #fff;
+}
+
+/* Login Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #00c6ff;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0072ff;
+}
+
+/* Back Link */
+.back-link {
+  margin-top: 20px;
+}
+
+.back-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

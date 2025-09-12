@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Role Selector</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Welcome to the Incident Reporting Portal</h1>
+  </header>
+
+  <div class="container">
+    <h2>Select Your Role</h2>
+    <div class="role-options">
+      <div class="role-card" onclick="goToLogin('student')">
+        <i class="fas fa-user-graduate fa-3x"></i>
+        <p>Student</p>
+      </div>
+      <div class="role-card" onclick="goToLogin('principal')">
+        <i class="fas fa-chalkboard-teacher fa-3x"></i>
+        <p>Principal</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function goToLogin(role) {
+      if (role === 'student') {
+        window.location.href = 'student_login.html';
+      } else if (role === 'principal') {
+        window.location.href = 'principal_login.html';
+      }
+    }
+  </script>
+</body>
+</html>
